@@ -1,4 +1,4 @@
-package com.smartcodeunited.app.appcafe
+package com.ifeegoo.app.appcafe
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
