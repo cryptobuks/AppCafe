@@ -8,6 +8,9 @@ Try to make Android &amp; iOS apps building &amp; distributing easier than befor
 * [macOS](https://www.apple.com/macos) `macOS High Sierra 10.13.6`  
 Server side operating system.
 
+* [Homebrew](https://brew.sh/) `latest`  
+The missing package manager for macOS.
+
 * [Java](http://openjdk.java.net/) `Java 1.8.0`  
 This is the base for Jenkins.
 
