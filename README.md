@@ -1,21 +1,21 @@
 <img src="logo-appcafe-horizontal.png" width="" height="100"/>
 
 # AppCafe
-Try to make Android &amp; iOS apps building &amp; distributing easier than before.
+Try to make Android &amp; iOS apps building and distributing easier than before in macOS.
 
-# AppCafe Installation Requirements
+# Installation Requirements
 
 * [macOS](https://www.apple.com/macos) `macOS High Sierra 10.13.6`  
 Server side operating system.
 
-* [Homebrew](https://brew.sh/) `latest`  
+* [Homebrew](https://brew.sh/) `latest Homebrew`  
 The missing package manager for macOS.
 
-* [Java](http://openjdk.java.net/) `Java 1.8.0`  
-This is the base for Jenkins.
+* [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html) `Java for macOS 1.8.0`  
+Jenkins requires Java.
 
-* [Jenkins](https://jenkins.io/) `Jenkins 2.121.1`  
+* [Jenkins](https://jenkins.io/) `latest Jenkins for macOS`  
 The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
 
-* [Fastlane](https://fastlane.tools/) `Fastlane 2.99.1`  
+* [Fastlane](https://fastlane.tools/) `latest Fastlane for macOS`  
 Fastlane is a continuous delivery tool for Android & iOS apps. 
