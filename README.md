@@ -11,11 +11,11 @@ Server side operating system.
 * **[Homebrew](https://brew.sh/)** `latest Homebrew`  [Installation Guide](/installation-guide/homebrew.md)  
 The missing package manager for macOS.
 
-* **[Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)** `Java for macOS 1.8.0`  
+* **[Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html)** `Java for macOS 1.8.0`  [Installation Guide](/installation-guide/java.md)  
 Jenkins requires Java.
 
-* **[Jenkins](https://jenkins.io/)** `latest Jenkins for macOS`  
-The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
+* **[Jenkins](https://jenkins.io/)** `latest Jenkins for macOS` [Installation Guide](/installation-guide/jenkins.md)  
+ The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
 
 * **[Fastlane](https://fastlane.tools/)** `latest Fastlane for macOS`  
 Fastlane is a continuous delivery tool for Android & iOS apps.
