@@ -22,7 +22,7 @@ You can use the command to get the password:
 1.If you want to get the admin password,it shows the permission denied,you can also try this command:  
 `sudo chown -R $(whoami) /Users/Shared/Jenkins/Home/secrets`  
 
-2.If you are not using English as the default language,please install the `Locale` plugin,and make the default language as English in Jenkins Config System and in the plugin Locale by set the value as `en-US`.  
+2.If you are not using English as the default language,please install the `Locale` plugin,and make the default language as English in Jenkins Config System and in the plugin Locale by set the value as `en-US`.  
 Remember:make `Ignore browser preference and force this language to all users` selected.  
 **English language will make you more global as a developer!**
 
