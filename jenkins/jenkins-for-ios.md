@@ -21,6 +21,32 @@ And then install them without restart.
 
 # Tips
 
+0.So I recommend you don't install Jenkins by `.pkg` installation file,and you can install Jenkins by `brew install jenkins-lts`,because you may meet this error which really not easy to solve.  
+```
+FATAL: Failed to copy /Users/Shared/Jenkins/Home/kpp_upload/iOS_Distribution_Ad_Hoc_20180802.mobileprovision to /Users/ifeegoo/Library/MobileDevice/Provisioning Profiles/6bc16df2-1086-4671-9125-a97542632ccc.mobileprovision
+java.nio.file.AccessDeniedException: /Users/ifeegoo/Library/MobileDevice
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.checkAccess(UnixFileSystemProvider.java:308)
+	at java.nio.file.Files.createDirectories(Files.java:746)
+	at hudson.FilePath.mkdirs(FilePath.java:3098)
+	at hudson.FilePath.write(FilePath.java:2002)
+	at hudson.FilePath.copyTo(FilePath.java:2122)
+Caused: java.io.IOException: Failed to copy /Users/Shared/Jenkins/Home/kpp_upload/iOS_Distribution_Ad_Hoc_20180802.mobileprovision to /Users/ifeegoo/Library/MobileDevice/Provisioning Profiles/6bc16df2-1086-4671-9125-a97542632ccc.mobileprovision
+	at hudson.FilePath.copyTo(FilePath.java:2126)
+	at com.sic.plugins.kpp.KPPProvisioningProfilesBuildWrapper.copyProvisioningProfiles(KPPProvisioningProfilesBuildWrapper.java:161)
+	at com.sic.plugins.kpp.KPPProvisioningProfilesBuildWrapper.setUp(KPPProvisioningProfilesBuildWrapper.java:99)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:157)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1798)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE
+```  
+The above error is terrible,because this is the file access permission problem.When you install Jenkins by `.pkg` file,Jenkins will be installed in the `Shared` diectory,but Jenkins will be installed in the `Users/{user}` directory,there will be no error the same as the above.
+
 1.When you use Xcode command you meet this error:  
 ```
 xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
